@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_tutoring"
+        android:icon="@drawable/lightbulb_icon"
+        android:title="@string/title_tutoring" />
+
+    <item
+        android:id="@+id/navigation_sigs"
+        android:icon="@drawable/computer_icon"
+        android:title="@string/title_sigs" />
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_social_media"
+        android:icon="@drawable/social_media_icon"
+        android:title="@string/title_social_media" />
+
+    <item
+        android:id="@+id/navigation_contact_us"
+        android:icon="@drawable/email_icon"
+        android:title="@string/title_contact_us" />
+
+</menu>
