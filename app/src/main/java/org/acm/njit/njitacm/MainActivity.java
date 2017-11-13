@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends FragmentActivity {
 
@@ -43,6 +44,7 @@ public class MainActivity extends FragmentActivity {
         transaction.commit();
         return true;
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,4 +65,5 @@ public class MainActivity extends FragmentActivity {
         navigation.setSelectedItemId(R.id.navigation_home);
 
     }
+
 }
