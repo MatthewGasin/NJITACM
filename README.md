@@ -16,5 +16,5 @@ It can be simple as you need to finish, they just gotta get did.
 
 Each person who wants to work on the project should make a commit changing this readme down here saying what they want to do:
     
-    Matt- I'll do whatever other people need help with!
-    Kevin - Something something
+    Matt- I'm back!
+    Joe - hopefully this will work again
