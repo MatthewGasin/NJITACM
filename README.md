@@ -19,3 +19,5 @@ Each person who wants to work on the project should make a commit changing this 
     Matt- I'm back!
     Joe - hopefully this will work again
     Kevin - something something 
+    Dan - Here we code!
+
