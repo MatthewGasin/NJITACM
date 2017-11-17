@@ -16,7 +16,7 @@ It can be simple as you need to finish, they just gotta get did.
 
 Each person who wants to work on the project should make a commit changing this readme down here saying what they want to do:
     
-    Matt- I'm back!
+    Matt- I'm back! with a branch!
     Joe - hopefully this will work again
     Kevin - something something 
     Dan - Here we code!
