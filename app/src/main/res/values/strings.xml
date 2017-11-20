@@ -5,6 +5,9 @@
     <string name="title_sigs">SIGs</string>
     <string name="title_social_media">Social Media</string>
     <string name="title_contact_us">Contact Us</string>
+    <string name="IS">IS</string>
+    <string name="IT">IT</string>
+    <string name="CS">CS</string>
 
 
 </resources>
