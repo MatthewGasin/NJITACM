@@ -1,18 +1,21 @@
 package org.acm.njit.njitacm;
 
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends FragmentActivity {
-
+    Button contactP, contactVP, contactPR, slack, discord, office;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -64,6 +67,63 @@ public class MainActivity extends FragmentActivity {
 
         navigation.setSelectedItemId(R.id.navigation_home);
 
+        contactP = (Button) findViewById(R.id.contactP);
+        contactVP = (Button) findViewById(R.id.contactVP);
+        contactPR = (Button) findViewById(R.id.contactPR);
+        slack = (Button) findViewById(R.id.slack);
+        discord = (Button) findViewById(R.id.discord);
+        office = (Button) findViewById(R.id.office);
+    }
+
+    public void onClickPresident(View view) {
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+        String email = "djb68@gmail.com";
+        emailIntent.setData(Uri.parse("mailto:"));
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{email});
+        emailIntent.setType("plain/text");
+        startActivity(Intent.createChooser(emailIntent, "Choose Email App"));
+    }
+
+    public void onClickVicePresident(View view) {
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+        String email = "mg427@gmail.com";
+        emailIntent.setData(Uri.parse("mailto:"));
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{email});
+        emailIntent.setType("plain/text");
+        startActivity(Intent.createChooser(emailIntent, "Choose Email App"));
+    }
+
+    public void onClickPublicRelations(View view) {
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+        String email = "ms2286@gmail.com";
+        emailIntent.setData(Uri.parse("mailto:"));
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{email});
+        emailIntent.setType("plain/text");
+        startActivity(Intent.createChooser(emailIntent, "Choose Email App"));
+    }
+
+    public void onClickSlack(View view) {
+        // Perform action on click
+        String url = "https://njit-acm.slack.com/signup";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+
+    public void onClickDiscord(View view) {
+        // Perform action on click
+        String url = "https://discord.gg/qtbyg8P";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
+
+    public void onClickOffice(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "973-596-2861";
+        int duration = Toast.LENGTH_LONG;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 
 }
