@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,21 +30,31 @@ public class SIGFragment extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        Log.d("Sig Fragment","onCreateView Started");
         View view = inflater.inflate(R.layout.fragment_sig, container, false);
         BTandroid = (ImageButton) getActivity().findViewById(R.id.imageButton3);
-        BTandroid.setOnClickListener(this);
+       /* BTandroid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(), "Your toast message.",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });*/
         BTalg = (ImageButton) getActivity().findViewById(R.id.imageButton4);
-        BTalg.setOnClickListener(this);
+       // BTalg.setOnClickListener(this);
         BTAppAlg = (ImageButton) getActivity().findViewById(R.id.imageButton5);
-        BTAppAlg.setOnClickListener(this);
+        //BTAppAlg.setOnClickListener(this);
         BTLinux = (ImageButton) getActivity().findViewById(R.id.imageButton6);
-        BTLinux.setOnClickListener(this);
+       // BTLinux.setOnClickListener(this);
         BTWebDev = (ImageButton) getActivity().findViewById(R.id.imageButton7);
-        BTWebDev.setOnClickListener(this);
+        //BTWebDev.setOnClickListener(this);
         BTRevEng = (ImageButton) getActivity().findViewById(R.id.imageButton8);
-        BTRevEng.setOnClickListener(this);
+        //BTRevEng.setOnClickListener(this);
 
-       // GridView gv =  getView().findViewById(R.id.SigGV);
+        Log.d("Sig Fragment","onCreateView Finished");
+
+
+        // GridView gv =  getView().findViewById(R.id.SigGV);
 
       //  gv.setAdapter(new ArrayAdapter<String>(this.getActivity(), R.layout.fragment_sig, gridViewNames));
         // Inflate the layout for this fragment

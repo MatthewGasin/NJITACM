@@ -5,11 +5,15 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
+
+import org.acm.njit.njitacm.SigDisplays.AndroidFrag;
 
 public class MainActivity extends FragmentActivity {
 
@@ -63,7 +67,33 @@ public class MainActivity extends FragmentActivity {
 
 
         navigation.setSelectedItemId(R.id.navigation_home);
+    }
+    public void SigOnClick(View view){
+        switch(view.getId()){
+            case R.id.imageButton3:
+                nextFragment(new AndroidFrag());
+                break;
+
+            case R.id.imageButton4:
+                Toast.makeText(this, "Your toast message.",
+                    Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.imageButton5:
+                break;
+
+            case R.id.imageButton6:
+                break;
+
+            case R.id.imageButton7:
+                break;
+
+            case R.id.imageButton8:
+                break;
+        }
+
 
     }
+
 
 }
