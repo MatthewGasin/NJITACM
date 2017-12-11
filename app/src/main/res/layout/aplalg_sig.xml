@@ -11,7 +11,8 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:layout_gravity="center"
-        android:text="This is a test, editing comes later"
-        android:textSize="50dp"/>
+        android:text="@string/sig_aplalg"
+        android:textAlignment="center"
+        android:textSize="50sp"/>
 
 </GridLayout>

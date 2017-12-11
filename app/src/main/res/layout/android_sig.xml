@@ -5,13 +5,15 @@
     tools:context="org.acm.njit.njitacm.SIGFragment"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:padding="25dp">
+
     <TextView
-        android:layout_row="0"
-        android:layout_column="0"
-        android:layout_height="match_parent"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="0"
         android:layout_gravity="center"
-        android:text="This is a test, editing comes later"
-        android:textSize="50dp"/>
+        android:layout_row="0"
+        android:text="@string/sig_android"
+        android:textAlignment="center"
+        android:textSize="50sp" />
 
 </GridLayout>

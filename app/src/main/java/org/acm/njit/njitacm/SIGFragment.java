@@ -20,8 +20,7 @@ import java.util.ArrayList;
 
 public class SIGFragment extends Fragment implements View.OnClickListener {
 
-
-
+    protected final String sigandroid = "Android";
     public SIGFragment() {
         // Required empty public constructor
     }

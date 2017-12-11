@@ -5,6 +5,17 @@
     <string name="title_sigs">SIGs</string>
     <string name="title_social_media">Social Media</string>
     <string name="title_contact_us">Contact Us</string>
+    <string name="sig_android">SIG Android</string>
+    <string name="sig_alg">SIG Algorithm</string>
+    <string name="sig_aplalg">SIG Applied Alg.</string>
+    <string name="sig_linux">SIG Linux</string>
+    <string name="sig_webdev">SIG Web Dev.</string>
+    <string name="sig_revenge">SIG Reverse Eng.</string>
+
+
+
+
+
 
 
 </resources>
