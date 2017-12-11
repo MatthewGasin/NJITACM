@@ -13,7 +13,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import org.acm.njit.njitacm.SigDisplays.AlgFrag;
 import org.acm.njit.njitacm.SigDisplays.AndroidFrag;
+import org.acm.njit.njitacm.SigDisplays.AplAlgFrag;
 
 public class MainActivity extends FragmentActivity {
 
@@ -75,14 +77,15 @@ public class MainActivity extends FragmentActivity {
                 break;
 
             case R.id.imageButton4:
-                Toast.makeText(this, "Your toast message.",
-                    Toast.LENGTH_SHORT).show();
+                nextFragment(new AlgFrag());
                 break;
 
             case R.id.imageButton5:
+                nextFragment(new AplAlgFrag());
                 break;
 
             case R.id.imageButton6:
+                //nextFragment(new )
                 break;
 
             case R.id.imageButton7:

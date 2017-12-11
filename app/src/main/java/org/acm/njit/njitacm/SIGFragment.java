@@ -20,8 +20,7 @@ import java.util.ArrayList;
 
 public class SIGFragment extends Fragment implements View.OnClickListener {
 
-    //String[] gridViewNames = {"Android","Algorithm","Applied Alg.","Linux","Sound Design","Web Design"};
-    ImageButton BTandroid,BTalg,BTAppAlg,BTLinux,BTWebDev,BTRevEng;
+
 
     public SIGFragment() {
         // Required empty public constructor
@@ -30,34 +29,8 @@ public class SIGFragment extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Log.d("Sig Fragment","onCreateView Started");
         View view = inflater.inflate(R.layout.fragment_sig, container, false);
-        BTandroid = (ImageButton) getActivity().findViewById(R.id.imageButton3);
-       /* BTandroid.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getActivity(), "Your toast message.",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });*/
-        BTalg = (ImageButton) getActivity().findViewById(R.id.imageButton4);
-       // BTalg.setOnClickListener(this);
-        BTAppAlg = (ImageButton) getActivity().findViewById(R.id.imageButton5);
-        //BTAppAlg.setOnClickListener(this);
-        BTLinux = (ImageButton) getActivity().findViewById(R.id.imageButton6);
-       // BTLinux.setOnClickListener(this);
-        BTWebDev = (ImageButton) getActivity().findViewById(R.id.imageButton7);
-        //BTWebDev.setOnClickListener(this);
-        BTRevEng = (ImageButton) getActivity().findViewById(R.id.imageButton8);
-        //BTRevEng.setOnClickListener(this);
 
-        Log.d("Sig Fragment","onCreateView Finished");
-
-
-        // GridView gv =  getView().findViewById(R.id.SigGV);
-
-      //  gv.setAdapter(new ArrayAdapter<String>(this.getActivity(), R.layout.fragment_sig, gridViewNames));
-        // Inflate the layout for this fragment
         return view;
     }
 
